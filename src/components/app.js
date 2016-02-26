@@ -1,10 +1,15 @@
-import React from 'react';
-import { Component } from 'react';
+import React, {Component} from 'react';
+import SearchBar from '../containers/search-bar';
+import WeatherList from '../containers/weather_list';
 
 export default class App extends Component {
   render() {
+  	console.log("dhf");
     return (
-      <div>React simple starter</div>
+    	<div>
+    		<SearchBar />
+    		<WeatherList />
+    	</div>
     );
   }
 }
